@@ -2,10 +2,10 @@
 #
 #
 
-open F, "find -type d |";
+open F, "find . -type d |";
 open J, ">list.js";
 
-print J "var adslist = [\n";
+print J "yjwt.adslist = [\n";
 
 while (<F>) {
 	chomp;
