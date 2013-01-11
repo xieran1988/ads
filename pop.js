@@ -33,8 +33,6 @@
 		
 	var host = window.location.host;
 
-	host = 'hao.163.com';
-
 	var pop = function (prob) {
 		if (!contains(hostlist, host) || contains(blacklist, host))
 			return ;

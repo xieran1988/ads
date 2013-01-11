@@ -34,9 +34,9 @@
 	};
 
 	var select = function (sel) {
-		if (sel[0] == '#') 
+		if (sel.charAt(0) == '#') 
 			return document.getElementById(sel.substring(1));
-		if (sel[0] == '.') {
+		if (sel.charAt(0) == '.') {
 			var cls = sel.substring(1);
 			var elems = document.getElementsByTagName('*'), i;
 			for (i in elems) {
@@ -74,10 +74,10 @@
 			return prepend('#aside', format(220, 200));
 		}
 		if (host == '2345.com' || host == 'www.2345.com') {
-			return prepend('#right', format(256, 200));
+			return prepend('#right', format(224, 200));
 		}
 		if (host == 'hao.360.cn') {
-			return before('.side-kuzhan-content', format(228, 200));
+			return prepend('#channel', format(240, 200));
 		}
 		if (host == 'www.hao123.com' || host == 'hao123.com') {
 			return before('.lcs-info', format(240, 200));

@@ -22,7 +22,7 @@ while (<F>) {
 		$ext = $3;
 		print " $f = $w $h $ext\n";
 		$type = $ext eq 'swf' ? 'swf' : 'img';
-		print J "{'url':'$url', '$type':'$f'},\n" if $type eq 'img';
+		print J "{'url':'$url', '$type':'$f', 'height':'$h', 'width':'$w'},\n" if $type eq 'img';
 	}
 }
 
